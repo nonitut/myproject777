@@ -7,6 +7,7 @@
     <link rel="icon" href=""> 
     <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
     <script src="javascripts/java-script.js" charset="utf-8"></script>
+
 </head>
 <body>
     <section class="glavniyecran">
@@ -90,15 +91,62 @@
             <p>Современные витаминно-минеральные комплексы <br>
                 для всей семьи всегда под рукой</p>
 
-            <select name="" id="">
-                <option value="">Мандарин</option>
-                <option value="">Мандарин</option>
-                <option value="">Мандарин</option>
-                <option value="">Мандарин</option>
+        <div class="select-container">
+            <select name="" id="flavorSelect">
+                <option value="1" class="option1">D + C Виноградный вкус  🍇</option>
+                <option value="2" class="option2">FE Малиновый вкус 🌺</option>
+                <option value="3" class="option3">ZN Голубичный вкус  🫐</option>
+                <option value="4" class="option4">K + C Мандариновый вкус  🍊</option>
             </select>
         </div>
-
+        <br>
+            <button class="firstbutton" id="popup">Оформить заказ</button>
+        </div>
+        <div id="order-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <h2>Оформление заказа</h2>
+                <form id="order-form">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
     </section>
+
+    <div class="dashed-line"></div>
+
+    <footer>
+        <h1>000 Витаминное желе </h1>
+        <p class="footerp" >Современные витаминно-минеральные комплексы <br>
+        для всей семьи всегда под рукой</p>
+
+        <div>
+            <p  class="footerp">Контакты:</p>
+            <div class="contact">
+                <p class="footerp">nona.blogg@gmail.com</p>
+                <p class="footerp">8 800 800 80 80</p>
+            </div>
+        </div>
+
+        <p class="warning">Внимание: данный проект является вымышленным и используется исключительно в образовательных или демонстрационных целях. Все имена, организации и события в данном проекте вымышлены и не имеют никакого отношения к реальности. Любое совпадение с реальными лицами или событиями является случайным.</p>
+
+        <div class="back">
+            <img src="./img/imgreference.png" alt="">
+        </div>
+    </footer>
+        
 
     
 </body>
