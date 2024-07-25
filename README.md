@@ -1,5 +1,5 @@
-# myproject777
+# main info:
  
-
- My project on figma.com : 
+Design prototype:
+Project case at portfolio: 
  
