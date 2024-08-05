@@ -6,22 +6,26 @@
     <title>Document</title>
     <link rel="icon" href=""> 
     <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
-    <script src="javascripts/java-script.js" charset="utf-8"></script>
-
+    <script src="./javascripts/java-script.js" charset="utf-8"></script>
 </head>
-<body>
+<body>  
+    <section class="zeropromo">
+        <div class="promo-text">
+        Бесплатная доставка по России  🗺️  Скидка 40% на первый заказ  💫  Оплата Долями  💸
+        Бесплатная доставка по России  🗺️  Скидка 40% на первый заказ  💫  Оплата Долями  💸
+        Бесплатная доставка по России  🗺️  Скидка 40% на первый заказ  💫  Оплата Долями  💸
+        </div>
+    </section>
     <section class="glavniyecran">
         <div class="imglogo"><img src="./img/Logologo.svg" alt=""></div>
-
         <div class="firstblockleft">
-        <div>
-        <h1>Волшебное желе  <br> в реальном мире</h1>
-        </div>
-        <div>
-        <p>Современные витаминно-минеральные комплексы <br>
-            для всей семьи всегда под рукой</p>
-        </div>
-        <a href="#section1"><button class="firstbutton">Выбрать желе - помощника</button></a>
+            <div>
+                <h1>Волшебное желе  <br> в реальном мире</h1>
+            </div>
+            <div>
+                <p>Современные витаминно-минеральные комплексы <br> для всей семьи всегда под рукой</p>
+            </div>
+            <a href="#section1"><button class="firstbutton">Выбрать желе - помощника</button></a>
         </div>
         <div class="firstblockright">
             <img class="firstblockrightimg" src="./img/fbimg.png" alt="">
@@ -34,9 +38,106 @@
         </div>
     </section>
 
-    <section id="section1" class="secondsection">
-        <h1>Наши идеальные сочетания <br> витаминных желе в стике</h1>
+    <section id="section1" class="testvitamin">
+        <div>
+            <img src="./img/testimg.png" alt="">
+        </div>
+        <div class="rightposition intro">
+            <h2> Узнайте, какие витамины <br> нужны именно вам </h2> 
+            <p> Бесплатно. Онлайн. За 5 минут </p>
+            <button id="startSurvey" class="firstbutton"> пройти опрос </button>
+        </div>
 
+        <div id="pop" class="modal">
+            <div class="modal-content-block">
+                <span class="close" id="closePopup">&times;</span>
+                <div class="popupwithtest">
+                    <div class="etapperviy active">
+                        <h2>Немного о том, <br> как работает наша система</h2>
+                        <div class="opisanie">
+                            <div class="bread"> <p>вы здесь</p></div>
+                            <p class="bold">  Опрос от врачей</p>
+                            <p>Оценим текущее состояние и потребности вашего организма</p>
+                            <p class="green">не более 5 минут</p>
+                        </div>
+                        <div class="opisanie">
+                            <p class="bold">Бесплатное назначение</p>
+                            <p>Подберём уникальный набор из 2-5 витаминов, которые нужны вам сейчас</p>
+                            <p class="green">меньше 1 минуты</p>
+                        </div>
+                        <div class="opisanie">
+                            <p class="bold">Набор витаминов</p>
+                            <p>Упакуем готовые комплекты на каждый день и доставим бесплатно</p>
+                            <p class="green">от 2 дней</p>
+                        </div>
+                        <button class="nextStep firstbutton"> начать </button>
+                        <p class="confedent">Ваши данные защищены. <a href="./politicaconfedentialnosti.html"> Подробнее </a></p>
+                    </div>
+
+                    <div class="etapwtoroy">
+                        <h2>Как вас зовут?</h2>
+                        <div class="alertoviy">
+                        <p class="showPopup alertonhover">Почему мы спрашиваем ? 🔔 </p>
+                        <div class="etapwtoroypopup"><p>Мы укажем ваше имя в наборе витаминов — так вы узнаете, что он подобран персонально для вас.</p></div>
+                        </div>
+                        <input type="text">
+                        <button class="nextStep firstbutton">далее</button>
+                    </div>
+
+                    <div class="etaptretiy">
+                        <h1>Какой у вас пол</h1>
+                        <p>Мужской</p><input class="otstup" type="radio" name="gender" value="male"> 
+                        <p>Женский</p><input  class="otstup"  type="radio" name="gender" value="female"> 
+                        <button class="nextStep firstbutton">далее</button>
+                    </div>
+
+                    <div class="etapchetvertiy">
+                        <h2>Сколько вам лет?</h2>
+                        <div class="alertoviy">
+                        <p class="showPopup">Почему мы спрашиваем ? 🔔 </p>
+                        <div class="etapwtoroypopup2">
+                            <p>Мы назначаем разные дозировки витаминов, в зависимости от возраста. 
+                            Если вы младше 18 лет, перед приёмом витаминов необходимо проконсультироваться с врачом.</p>
+                        </div>
+                    </div>
+                        <input type="number">
+                        <button class="nextStep firstbutton">далее</button>
+                    </div>
+
+                    <div class="etappyatt">
+                        <h2>В каком городе вы живёте?</h2>
+                        <p>Бесплатная доставка по всей России, Армении, Республике Беларусь и Казахстану</p>
+                        <select>
+                            <option value="Россия">Россия</option>
+                            <option value="Армения">Армения</option>
+                            <option value="Республика Беларусь">Республика Беларусь</option>
+                            <option value="Казахстан">Казахстан</option>
+                        </select>
+                        <button class="nextStep firstbutton">далее</button>
+                    </div>
+                    
+
+                    <div class="etapshestoy">
+                        <h2>Выберите важнейшие цели:</h2>
+                        <p>Они станут основными для вашего курса витаминов. Второстепенные задачи тоже учтём при подборе.</p>
+                        <label><input type="checkbox"> Поддержка иммунитета</label><br>
+                        <label><input type="checkbox"> Качество сна</label><br>
+                        <label><input type="checkbox"> Здоровье волос</label><br>
+                        <label><input type="checkbox"> Здоровье кожи</label><br>
+                        <label><input type="checkbox"> Здоровье ногтей</label><br>
+                        <label><input type="checkbox"> Похудение</label><br>
+                        <label><input type="checkbox"> Работа со стрессом</label><br>
+                        <label><input type="checkbox"> Память и фокус</label><br>
+                        <label><input type="checkbox"> Уровень энергии</label><br>
+                        <button class="nextStep firstbutton">далее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <h1>Наши идеальные сочетания <br> витаминных желе в стике</h1>
         <div class="productcards">
             <div class=""><img src="./img/productcard1.png" alt=""></div>
             <div class=""><img src="./img/productcardgrape2.png" alt=""></div>
@@ -47,25 +148,16 @@
     
     <section class="thirdsection">
         <h1>Наши желе в стике улучшают <br> качество жизни</h1>
-            <img src="./img/cool.svg" alt="">
-    </section>
-
-    <section class="forthsection">
-        <h1>Как выбрать витаминный стик</h1>
-        <div class="forthimg">
-            <img src="./img/stick1.png" alt="">
-            <img src="./img/stick2.png" alt="">
-            <img src="./img/stick3.png" alt="">
-        </div>
+        <img src="./img/cool.svg" alt="">
     </section>
 
     <section class="fivesection">
         <h1>Надежная упаковка!</h1>
         <div class="fiveimg">
-        <img src="./img/Darkblue.png" alt="">
-        <img src="./img/orange.png" alt="">
-        <img src="./img/perple.png" alt="">
-        <img src="./img/pink.png" alt="">
+            <img src="./img/Darkblue.png" alt="">
+            <img src="./img/orange.png" alt="">
+            <img src="./img/perple.png" alt="">
+            <img src="./img/pink.png" alt="">
         </div>
     </section>
 
@@ -85,53 +177,26 @@
         <div class="offerleft">
             <img src="./img/boxoffer.png" alt="">
         </div>
-
         <div class="offerright">
             <h1>Волшебное желе <br> в реальном мире</h1>
-            <p>Современные витаминно-минеральные комплексы <br>
-                для всей семьи всегда под рукой</p>
-
-        <div class="select-container">
-            <select name="" id="flavorSelect">
-                <option value="1" class="option1">D + C Виноградный вкус  🍇</option>
-                <option value="2" class="option2">FE Малиновый вкус 🌺</option>
-                <option value="3" class="option3">ZN Голубичный вкус  🫐</option>
-                <option value="4" class="option4">K + C Мандариновый вкус  🍊</option>
-            </select>
-        </div>
-        <br>
-            <button class="firstbutton" id="popup">Оформить заказ</button>
-        </div>
-        <div id="order-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-modal">&times;</span>
-                <h2>Оформление заказа</h2>
-                <form id="order-form">
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required>
-    
-                    <label for="message">Сообщение:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-    
-                    <button type="submit">Отправить</button>
-                </form>
+            <p>Современные витаминно-минеральные комплексы <br> для всей семьи всегда под рукой</p>
+            <div class="select-container">
+                <select name="" id="flavorSelect">
+                    <option value="1" class="option1">D + C Виноградный вкус  </option>
+                    <option value="2" class="option2"> D + C + Цинк Вишневый вкус</option>
+                    <option value="3" class="option3">Детский витаминный комплекс</option>
+                    <option value="4" class="option4">Общий витаминный комплекс</option>
+                </select>
             </div>
+            <button class="firstbutton"> Оформить заказ </button>
         </div>
     </section>
-
-    <div class="dashed-line"></div>
 
     <footer>
         <h1>000 Витаминное желе </h1>
         <p class="footerp" >Современные витаминно-минеральные комплексы <br>
         для всей семьи всегда под рукой</p>
-
+    
         <div>
             <p  class="footerp">Контакты:</p>
             <div class="contact">
@@ -139,16 +204,13 @@
                 <p class="footerp">8 800 800 80 80</p>
             </div>
         </div>
-
+    
         <p class="warning">Внимание: данный проект является вымышленным и используется исключительно в образовательных или демонстрационных целях. Все имена, организации и события в данном проекте вымышлены и не имеют никакого отношения к реальности. Любое совпадение с реальными лицами или событиями является случайным.</p>
-
+    
         <div class="back">
             <img src="./img/imgreference.png" alt="">
         </div>
     </footer>
-        
 
-    
 </body>
 </html>
-

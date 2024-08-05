@@ -22,12 +22,19 @@ font-weight: normal;
     src: url("../fonts/Inter-Light.ttf") format("truetype");
     font-style: light;
     font-weight: light;
-    }
+}
 
     h1 {
         font-family: "DelaGothicOne-Regular";
         color: #6D31D0;
         font-size: 4vw;
+        line-height: 90%;
+    }
+
+    h2 {
+        font-family: "DelaGothicOne-Regular";
+        color: #6D31D0;
+        font-size:3vw;
         line-height: 90%;
     }
 
@@ -38,16 +45,45 @@ font-weight: normal;
         color: #6D31D0;
     }
 
+    .zeropromo{
+        width: 100%;
+        height: 5%;
+        margin-top: 1%;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap; 
+        color: #6D31D0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(100px);
+    }
+    
+    .promo-text {
+        font-family: "Inter-Light";
+        position: absolute;
+        white-space: nowrap;
+        height: 100%;
+        margin-top: 0.6%;
+        animation: scroll 15s linear infinite;
+        font-size: 1.6vw;
+        z-index: 1000;
+    }
+    
+    @keyframes scroll {
+        0% {transform: translateX(2%);}
+        100% {  transform: translateX(-10%);}
+    }
+    
+
 .imglogo{
     position: absolute;
     width: 80%;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 8%;
 }
 
 .imglogo img{
     width: 20%;
-    position: fixed;
+    position: relative;
     z-index: 100;
 }
 
@@ -55,6 +91,7 @@ font-weight: normal;
     display: flex;
     position: relative;
     width: 100%;
+    height: 50vw;
 }
 
 .firstblockleft{
@@ -79,7 +116,7 @@ font-weight: normal;
 .firstblockrightimg{
     margin-left: -6%; 
     width: 215%;
-    margin-top: -10%;
+    margin-top: -2%;
     transition: transform 1s ease, opacity 0.3s ease-in-out;
 }
 
@@ -101,6 +138,14 @@ font-weight: normal;
 }
 .firstbutton:hover{
     background: #FF00A8;
+}
+
+.firstblockleft, .firstblockright {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in {
+    opacity: 1;
 }
 
 .arrowsection{
@@ -372,42 +417,43 @@ footer h1{
 
 /* Стили для модального окна */
 .modal {
-    display: none; /* Скрываем модальное окно по умолчанию */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(236, 205, 254, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: scroll;
 }
 
-.modal-content {
+.modal-content-block{
     background: #fff;
     border-radius: 8px;
     padding: 20px;
     width: 80%;
-    max-width: 500px;
+    margin: 3% 10%;
 }
 
-.modal-content h2 {
+.modal-content-block h2 {
     font-family: "DelaGothicOne-Regular";
     color: #6D31D0;
     margin-bottom: 20px;
 }
 
-.modal-content label {
+.modal-content-block label {
     display: block;
     margin-bottom: 10px;
     font-family: "DelaGothicOne-Regular";
     color: #333;
 }
 
-.modal-content input,
-.modal-content textarea,
-.modal-content button {
+.modal-content-block input,
+.modal-content-block textarea,
+.modal-content-block button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -434,4 +480,211 @@ footer h1{
     font-size: 3vw;
     cursor: pointer;
     color: #ffffff;
+}
+
+
+.testvitamin{
+    margin-left: 5%;
+    display: flex;
+    width: 90%;
+}
+
+.rightposition{
+    width: 120%;
+    padding-top: 10%;
+    margin-left: -5%;
+}
+
+.testvitamin > div > img{
+    width: 80%;
+}
+
+
+
+
+.intro {
+    display: block;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+ .popupwithtest > div {
+    display: none;
+}
+.popupwithtest > div.active {
+    display: block;
+} 
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.opisanie { 
+    background: #fff2fb;
+    margin-left: 5%;
+    padding: 3%;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+.opisanie p{
+    font-size: 1vw;
+    margin-top: 1%;
+}
+
+.bread p{
+    position: absolute;
+    margin-left: 60%;
+    font-family: "Inter-Light";
+    background: #6D31D0;
+    color: #fff;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+}
+
+.green{
+    color: #FFBA7A;
+}
+
+.etapperviy h2{
+    margin: 4% 5%;
+
+}
+
+.confedent{
+    font-size: 1.2vw;
+    margin-left: 36%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.bold{
+    font-family: "DelaGothicOne-Regular";
+    margin-bottom: 2%;
+}
+
+
+.alertonhover{
+    font-size: 1vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.alertoviy{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.etapwtoroypopup {
+    display: none;
+    padding: 1%;
+    margin-left: 1%;
+    width: 80%;
+    /* box-shadow: 0 4px 8px rgba(236, 205, 254, 0.8); */
+}
+.etapwtoroypopup p{
+    font-size: 1vw;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+.showPopup:hover + .etapwtoroypopup {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1;}
+}
+
+.etapwtoroypopup2 {
+    display: none;
+    padding: 1%;
+    margin-left: 1%;
+    width: 80%;
+    /* box-shadow: 0 4px 8px rgba(236, 205, 254, 0.8); */
+}
+.etapwtoroypopup2 p{
+    font-size: 1vw;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+.showPopup:hover + .etapwtoroypopup2 {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+
+
+.otstup{
+    margin-top: 2%;
+}
+input[type="radio"] {
+    width: 5%;
+    height: 3.5vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #6D31D0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    background-color: #FF00A8;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.etappyatt select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #FF00A8;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.etappyatt .nextStep {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF00A8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.etappyatt .nextStep:hover {
+    background-color: #6D31D0;
 }
