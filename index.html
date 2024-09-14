@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href=""> 
+    <link rel="icon" href="./img/favocin.png"> 
     <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
     <script src="./javascripts/java-script.js" charset="utf-8"></script>
 </head>
@@ -182,15 +182,28 @@
             <p>Современные витаминно-минеральные комплексы <br> для всей семьи всегда под рукой</p>
             <div class="select-container">
                 <select name="" id="flavorSelect">
-                    <option value="1" class="option1">D + C Виноградный вкус  </option>
-                    <option value="2" class="option2"> D + C + Цинк Вишневый вкус</option>
+                    <option value="1" class="option1">D + C Виноградный вкус</option>
+                    <option value="2" class="option2">D + C + Цинк Вишневый вкус</option>
                     <option value="3" class="option3">Детский витаминный комплекс</option>
                     <option value="4" class="option4">Общий витаминный комплекс</option>
                 </select>
             </div>
-            <button class="firstbutton"> Оформить заказ </button>
+            <button class="firstbutton oformitzakaz">Оформить заказ</button>
+        </div>
+    
+        <div class="secondpopupfooter" id="secondPopupFooter">
+            <!-- Ваш контент попапа -->
+            <span class="close-popup" id="closePop">&times;</span>
+            <div class="lastpopupstopy">
+                <p>Наш менеджер свяжется с вами. <br> Пожалуйста, оставьте ваш номер телефона:</p>
+                <input type="text" id="phoneNumber" placeholder="Ваш номер телефона" />
+                <button type="button" id="submitPhone">Отправить</button>
+                <p id="confirmationMessage" style="display: none; color: green; margin-top: 10px;">Ваша заявка принята</p>
+            </div>
         </div>
     </section>
+    
+
 
     <footer>
         <h1>000 Витаминное желе </h1>
