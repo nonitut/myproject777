@@ -765,3 +765,31 @@ border-radius: 5px;
     color: #ffffff; /* Замените #FF5733 на желаемый цвет */
     opacity: 1; /* Полностью видимый цвет */
 }
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+#canvas-target{
+    overflow-x: hidden;
+    width: 110vw; /* Укажите нужную ширину контейнера */
+    display: block;
+    margin: -5vw;
+    padding: 0;
+}
+.positioning { 
+    display: none;
+    position: relative;
+}
+
+.a-image {
+    position: absolute;
+    width: 250px; 
+    height: 250px; 
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Добавление плавного перехода */
+}
+
+.a-image:hover {
+    transform: scale(2.1); /* Увеличение изображения при наведении */
+}
+/* //////////////////////////////////////////////////////////////// */
